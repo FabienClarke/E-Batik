@@ -62,3 +62,31 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+##bajubaru
+- Name : {Admin Login}
+- Method : {POST}
+- URL : {http://localhost:8000/api/admin/login}
+- Body : -
+- Email : required
+- Password :required
+- Headers :
+{Accept = application/json
+Content-Type = application/json}
+- Response :
+{
+    "success": true,
+    "user": {
+        "id": 1,
+        "name": "Administrator",
+        "email": "admin@gmail.com",
+        "email_verified_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    "token":   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvbG9naW4iLCJpYXQiOjE2NTQyNDI4MTQsImV4cCI6MTY1NDI0NjQxNCwibmJmIjoxNjU0MjQyODE0LCJqdGkiOiI5RjJrU05hckprbGNVUVhRIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.v5Hix5-GQX5e-_T-mO2EPGu5AUw9s60nCW7-0m-89KY"
+}
+
+- Code : 200
+
+
