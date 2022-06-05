@@ -65,16 +65,16 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## ADMIN
 Admin Login
-```
-- Method : {POST}
-- URL : {http://localhost:8000/api/admin/login}
-- Body : -
-- Email : required
-- Password :required
-- Headers :
-{Accept = application/json
-Content-Type = application/json}
-- Response :
+```json
+"Method" : "POST"
+"URL" : "http://localhost:8000/api/admin/login"
+"Body" : 
+"Email" : "required"
+"Password" : "required"
+"Headers" :
+{"Accept" : "application/json"
+"Content-Type" : "application/json"}
+"Response" :
 {
     "success": true,
     "user": {
@@ -88,17 +88,17 @@ Content-Type = application/json}
     "token":   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvbG9naW4iLCJpYXQiOjE2NTQyNDI4MTQsImV4cCI6MTY1NDI0NjQxNCwibmJmIjoxNjU0MjQyODE0LCJqdGkiOiI5RjJrU05hckprbGNVUVhRIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.v5Hix5-GQX5e-_T-mO2EPGu5AUw9s60nCW7-0m-89KY"
 }
 
-- Code : 200
+"Code" : "200"
 ```
 Admin Refresh
-```
-- Method : GET
-- URL : http://localhost:8000/api/admin/refresh
-- Body : -
-- Headers : 
-{Accept = application/json
-Content-Type = application/json}
-- Response :
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/admin/refresh"
+"Body" : 
+"Headers" : 
+{"Accept" : "application/json"
+"Content-Type" : "application/json"}
+"Response" :
 {
     "success": true,
     "user": {
@@ -111,20 +111,20 @@ Content-Type = application/json}
     },
     "token":   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvbG9naW4iLCJpYXQiOjE2NTQyNDI4MTQsImV4cCI6MTY1NDI0NjQxNCwibmJmIjoxNjU0MjQyODE0LCJqdGkiOiI5RjJrU05hckprbGNVUVhRIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.v5Hix5-GQX5e-_T-mO2EPGu5AUw9s60nCW7-0m-89KY"
 }
-- Code : 200
+"Code" : "200"
 ```
 Admin Invoices
-```
-- Method : GET
-- URL : http://localhost:8000/api/admin/Invoices
-- Body :
-{Email : required
-Password :required}
-- Headers :
-{Accept = application/json
-Content-Type = application/json
-Authorization = Bearer Token}
-- Response :
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/admin/Invoices"
+"Body" :
+{"Email" : "required"
+"Password" : "required"}
+"Headers" :
+{"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"}
+"Response" :
 {
     "success": true,
     "message": "List Data Invoices",
@@ -301,21 +301,21 @@ Authorization = Bearer Token}
         "total": 6
     }
 }
-- Code : 200
+"Code" : "200"
 ```
 
 Admin Customers
-```
-Method : GET
-URL : http://localhost:8000/api/admin/Customers
-Body 
-Email : required
-Password : required
-Headers :
-{Accept = application/json
-Content-Type = application/json
-Authorization = Bearer Token}
-Response :
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/admin/Customers"
+"Body" 
+"Email" : "required"
+"Password" : "required"
+"Headers" :
+{"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"}
+"Response" :
 {
     "success": true,
     "message": "List Data Customer",
@@ -384,18 +384,18 @@ Response :
         "total": 4
     }
 }
-Code : 200
+"Code" : "200"
 ```
 Admin Sliders
-```
-Method : GET
-URL : http://localhost:8000/api/admin/Sliders
-Body :
-Headers : 
-{Accept = application/json
-Content-Type = application/json
-Authorization = Bearer Token}
-Response : 
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/admin/Sliders"
+"Body" :
+"Headers" : 
+{"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"}
+"Response" : 
 {
     "success": true,
     "message": "List Data Sliders",
@@ -453,8 +453,103 @@ Response :
         "total": 3
     }
 }
-Code : 200
+"Code" : "200"
 ```
+Admin sliders add
+```json
+"Method" : "POST"
+"URL" : "http://localhost:8000/api/admin/Customers"
+"Body" :
+"Image" : "Nama.JPG"
+"Link" : "url"
+"Headers" :
+{"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"}
+"Response" :
+{
+    "success": true,
+    "message": "Data Slider Berhasil Disimpan!",
+    "data": {
+        "image": "http://localhost:8000/storage/sliders/TCZQJBmAbDfpGHp6kx3sxTSJxRb4Ci9ppcKKYPIa.jpg",
+        "link": "#",
+        "updated_at": "2022-06-04T08:55:20.000000Z",
+        "created_at": "2022-06-04T08:55:20.000000Z",
+        "id": 7
+    }
+}
+"Code" : "200"
+```
+Admin Sliders Delete
+```json
+"Method" : "DELETE"
+"URL" : "http://localhost:8000/api/admin/sliders/7"
+"Body" :
+{"Image" : "Nama.JPG"
+"Link" : "url"}
+"Headers" :
+{"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"}
+"Response" :
+{
+    "success": true,
+    "message": "Data Slider Berhasil Dihapus!",
+    "data": null
+}
+"Code" : "200"
+```
+Admin Categories Post
+```json
+"Method" : "Post"
+"URL" : "http://localhost:8000/api/admin/categories"
+"Body" :
+{"Image" : "Nama.jpg"
+"Name" : "Batik Parang"}
+"Headers" :
+{"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"}
+"Response" :
+{
+    "success": true,
+    "message": "Data Category Berhasil Disimpan!",
+    "data": {
+        "image": "http://localhost:8000/storage/categories/gJNFQ9PnYVm5YERgk5VuTZkJyUcic7rGsTW0TTTA.jpg",
+        "name": "Batik Parang",
+        "slug": "batik-parang",
+        "updated_at": "2022-06-04T09:06:14.000000Z",
+        "created_at": "2022-06-04T09:06:14.000000Z",
+        "id": 11
+    }
+}
+ 
+"Code" : "200"
+```
+Admin Get User
+```json
+"Method" : "GET",
+"URL" : "http://localhost:8000/api/admin/user",
+"Body" :
+"Headers" :
+{"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"}
+"Response" :
+{
+    "success": true,
+    "user": {
+        "id": 1,
+        "name": "Administrator",
+        "email": "admin@gmail.com",
+        "email_verified_at": null,
+        "created_at": null,
+        "updated_at": null
+    }
+}
+"Code" : "200"
+```
+
 
 
 
