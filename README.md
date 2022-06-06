@@ -571,8 +571,147 @@ Admin Get User
 "Code" : "200"
 ```
 
+## WEBSITE 
+
+List Data Categories 
+Request:
+  - Method : GET
+  - Endpoint : http://localhost:8000/api/web/categories
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          
+  
+  - Body   : 
+  
+          
+  
+  - Respone: 
+  
+                {
+                    "success": true,
+                    "message": "List Data Categories",
+                    "data": [
+                        {
+                            "id": 2,
+                            "name": "batik parang rusak",
+                            "slug": "batik-parang-rusak",
+                            "image": "http://localhost:8000/storage/categories/G3ktsny0ntUjvzeHFyOQfDiAghFvb42gSn5oQ074.jpg",
+                            "created_at": "2022-05-29T20:31:36.000000Z",
+                            "updated_at": "2022-06-03T07:34:19.000000Z"
+                        },
+                        {
+                            "id": 1,
+                            "name": "barang 2",
+                            "slug": "barang-2",
+                            "image": "http://localhost:8000/storage/categories/qhkvkK1spEeEQDjUoWxXjFhtrFJAdI7vLWgiQ5fb.jpg",
+                            "created_at": "2022-05-29T17:03:39.000000Z",
+                            "updated_at": "2022-05-29T21:05:54.000000Z"
+                        }
+                    ]
+                }
+ 
 
 
+Show Data Categories 
+Request:
+  - Method : GET
+  - Endpoint : http://localhost:8000/api/web/categories/batik-nugroho
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          
+  
+  - Body   : 
+  
+          
+  
+  - Respone: 
+
+                {
+                    "success": true,
+                    "message": "Data Product By Category : batik parang rusak",
+                    "data": {
+                        "id": 2,
+                        "name": "batik parang rusak",
+                        "slug": "batik-parang-rusak",
+                        "image": "http://localhost:8000/storage/categories/G3ktsny0ntUjvzeHFyOQfDiAghFvb42gSn5oQ074.jpg",
+                        "created_at": "2022-05-29T20:31:36.000000Z",
+                        "updated_at": "2022-06-03T07:34:19.000000Z",
+                        "products": []
+                    }
+                }
+
+
+Show Data Categories Products
+Request:
+  - Method : GET
+  - Endpoint : http://localhost:8000/api/web/products/bating-lengan-panjan-nugroho
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          
+  
+  - Body   : 
+  
+          
+  
+  - Respone: 
+
+
+
+                    {
+                        "success": true,
+                        "message": "Detail Data Product!",
+                        "data": {
+                            "id": 1,
+                            "image": "http://localhost:8000/storage/products/G63skJFShsMIzwicrjenzaIjoNCFHBCKQ5Qw69di.jpg",
+                            "title": "Bating lengan panjan nugroho",
+                            "slug": "bating-lengan-panjan-nugroho",
+                            "category_id": 1,
+                            "user_id": 1,
+                            "description": "baju ini adalah baju yang di desain untuk kondangan dan acara besar",
+                            "weight": 450,
+                            "price": 900000,
+                            "stock": 50,
+                            "discount": 10,
+                            "created_at": "2022-05-29T17:07:56.000000Z",
+                            "updated_at": "2022-05-29T17:07:56.000000Z",
+                            "reviews_avg_rating": "5.0",
+                            "reviews_count": 1,
+                            "category": {
+                                "id": 1,
+                                "name": "barang 2",
+                                "slug": "barang-2",
+                                "image": "http://localhost:8000/storage/categories/qhkvkK1spEeEQDjUoWxXjFhtrFJAdI7vLWgiQ5fb.jpg",
+                                "created_at": "2022-05-29T17:03:39.000000Z",
+                                "updated_at": "2022-05-29T21:05:54.000000Z"
+                            },
+                            "reviews": [
+                                {
+                                    "id": 1,
+                                    "product_id": 1,
+                                    "order_id": 2,
+                                    "customer_id": 2,
+                                    "rating": 5,
+                                    "review": "sangat bagus",
+                                    "created_at": "2022-05-30T05:50:06.000000Z",
+                                    "updated_at": "2022-05-30T05:50:06.000000Z",
+                                    "customer": {
+                                        "id": 2,
+                                        "name": "mulyadi arman",
+                                        "email": "mulyadiarman18@gmail.com",
+                                        "email_verified_at": null,
+                                        "created_at": "Minggu, 29 Mei 2022",
+                                        "updated_at": "2022-05-29T22:11:42.000000Z"
+                                    }
+                                }
+                            ]
+                        }
+                    }
 
 
 
