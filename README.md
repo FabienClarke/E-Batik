@@ -645,7 +645,7 @@ Request:
                 }
 
 
-Show Data Categories Products
+Show Detail Data Products
 Request:
   - Method : GET
   - Endpoint : http://localhost:8000/api/web/products/bating-lengan-panjan-nugroho
@@ -714,7 +714,554 @@ Request:
                     }
 
 
+Show Sliders 
+Request:
+  - Method : GET
+  - Endpoint :  http://localhost:8000/api/web/sliders
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          
+  
+  - Body   : 
+  
+          
+  
+  - Respone: 
+
+                {
+                    "success": true,
+                    "message": "List Data Sliders",
+                    "data": []
+                }
 
 
+Show Ptovinces 
+Request:
+  - Method : GET
+  - Endpoint :  http://localhost:8000/api/web/rajaongkir/provinces
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          
+  
+  - Body   : 
+        
+          
+  
+  - Respone: 
+
+                {
+                    "success": true,
+                    "message": "List Data Provinces",
+                    "data": [
+                        {
+                            "id": 1,
+                            "province_id": 1,
+                            "name": "Bali",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 2,
+                            "province_id": 2,
+                            "name": "Bangka Belitung",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 3,
+                            "province_id": 3,
+                            "name": "Banten",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 4,
+                            "province_id": 4,
+                            "name": "Bengkulu",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 5,
+                            "province_id": 5,
+                            "name": "DI Yogyakarta",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 6,
+                            "province_id": 6,
+                            "name": "DKI Jakarta",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 7,
+                            "province_id": 7,
+                            "name": "Gorontalo",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 8,
+                            "province_id": 8,
+                            "name": "Jambi",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 9,
+                            "province_id": 9,
+                            "name": "Jawa Barat",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 10,
+                            "province_id": 10,
+                            "name": "Jawa Tengah",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 11,
+                            "province_id": 11,
+                            "name": "Jawa Timur",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 12,
+                            "province_id": 12,
+                            "name": "Kalimantan Barat",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 13,
+                            "province_id": 13,
+                            "name": "Kalimantan Selatan",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 14,
+                            "province_id": 14,
+                            "name": "Kalimantan Tengah",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 15,
+                            "province_id": 15,
+                            "name": "Kalimantan Timur",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 16,
+                            "province_id": 16,
+                            "name": "Kalimantan Utara",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 17,
+                            "province_id": 17,
+                            "name": "Kepulauan Riau",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 18,
+                            "province_id": 18,
+                            "name": "Lampung",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 19,
+                            "province_id": 19,
+                            "name": "Maluku",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 20,
+                            "province_id": 20,
+                            "name": "Maluku Utara",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 21,
+                            "province_id": 21,
+                            "name": "Nanggroe Aceh Darussalam (NAD)",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 22,
+                            "province_id": 22,
+                            "name": "Nusa Tenggara Barat (NTB)",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 23,
+                            "province_id": 23,
+                            "name": "Nusa Tenggara Timur (NTT)",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 24,
+                            "province_id": 24,
+                            "name": "Papua",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 25,
+                            "province_id": 25,
+                            "name": "Papua Barat",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 26,
+                            "province_id": 26,
+                            "name": "Riau",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 27,
+                            "province_id": 27,
+                            "name": "Sulawesi Barat",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 28,
+                            "province_id": 28,
+                            "name": "Sulawesi Selatan",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 29,
+                            "province_id": 29,
+                            "name": "Sulawesi Tengah",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 30,
+                            "province_id": 30,
+                            "name": "Sulawesi Tenggara",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 31,
+                            "province_id": 31,
+                            "name": "Sulawesi Utara",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 32,
+                            "province_id": 32,
+                            "name": "Sumatera Barat",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 33,
+                            "province_id": 33,
+                            "name": "Sumatera Selatan",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        },
+                        {
+                            "id": 34,
+                            "province_id": 34,
+                            "name": "Sumatera Utara",
+                            "created_at": "2022-05-29T17:36:01.000000Z",
+                            "updated_at": "2022-05-29T17:36:01.000000Z"
+                        }
+                    ]
+                }
+                
+   
+Show City 
+Request:
+  - Method : GET
+  - Endpoint :  http://localhost:8000/api/web/rajaongkir/cities
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          
+  
+  - Body   : 
+        
+        provinces_id: 1  
+  
+  - Respone: 
 
 
+                {
+                    "success": true,
+                    "message": "List Data City By Province : Bali",
+                    "data": [
+                        {
+                            "id": 17,
+                            "province_id": 1,
+                            "city_id": 17,
+                            "name": "Badung - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 32,
+                            "province_id": 1,
+                            "city_id": 32,
+                            "name": "Bangli - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 94,
+                            "province_id": 1,
+                            "city_id": 94,
+                            "name": "Buleleng - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 114,
+                            "province_id": 1,
+                            "city_id": 114,
+                            "name": "Denpasar - (Kota)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 128,
+                            "province_id": 1,
+                            "city_id": 128,
+                            "name": "Gianyar - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 161,
+                            "province_id": 1,
+                            "city_id": 161,
+                            "name": "Jembrana - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 170,
+                            "province_id": 1,
+                            "city_id": 170,
+                            "name": "Karangasem - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 197,
+                            "province_id": 1,
+                            "city_id": 197,
+                            "name": "Klungkung - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:07.000000Z",
+                            "updated_at": "2022-05-29T17:37:07.000000Z"
+                        },
+                        {
+                            "id": 447,
+                            "province_id": 1,
+                            "city_id": 447,
+                            "name": "Tabanan - (Kabupaten)",
+                            "created_at": "2022-05-29T17:37:08.000000Z",
+                            "updated_at": "2022-05-29T17:37:08.000000Z"
+                        }
+                    ]
+                }
+                
+                
+                
+               
+Check Ongkir 
+Request:
+  - Method : POST
+  - Endpoint :  http://localhost:8000/api/web/rajaongkir/checkOngkir
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          
+  
+  - Body   : 
+        
+          destination : 144
+          weight : 1000
+          courier : jne
+  
+  - Respone: 
+  
+  
+                      {
+                        "success": true,
+                        "message": "List Data Biaya Ongkos Kirim : jne",
+                        "data": [
+                            {
+                                "service": "OKE",
+                                "description": "Ongkos Kirim Ekonomis",
+                                "cost": [
+                                    {
+                                        "value": 44000,
+                                        "etd": "5-7",
+                                        "note": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "service": "REG",
+                                "description": "Layanan Reguler",
+                                "cost": [
+                                    {
+                                        "value": 48000,
+                                        "etd": "3-5",
+                                        "note": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                    
+                    
+                  
+                   
+
+
+carts
+Request:
+  - Method : GET
+  - Endpoint :   http://localhost:8000/api/web/carts
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          Authorization: Bearer token
+  
+  - Body   : 
+        
+  
+  - Respone: 
+
+
+                    {
+                        "success": true,
+                        "message": "List Data Carts : alex",
+                        "data": [
+                            {
+                                "id": 1,
+                                "product_id": 1,
+                                "customer_id": 1,
+                                "qty": 1,
+                                "price": 100000,
+                                "weight": 100,
+                                "created_at": "2022-05-29T19:02:44.000000Z",
+                                "updated_at": "2022-05-29T19:02:44.000000Z",
+                                "product": {
+                                    "id": 1,
+                                    "image": "http://localhost:8000/storage/products/G63skJFShsMIzwicrjenzaIjoNCFHBCKQ5Qw69di.jpg",
+                                    "title": "Bating lengan panjan nugroho",
+                                    "slug": "bating-lengan-panjan-nugroho",
+                                    "category_id": 1,
+                                    "user_id": 1,
+                                    "description": "baju ini adalah baju yang di desain untuk kondangan dan acara besar",
+                                    "weight": 450,
+                                    "price": 900000,
+                                    "stock": 50,
+                                    "discount": 10,
+                                    "created_at": "2022-05-29T17:07:56.000000Z",
+                                    "updated_at": "2022-05-29T17:07:56.000000Z"
+                                }
+                            }
+                        ]
+                    }
+                    
+
+add carts 
+Request:
+  - Method : POST
+  - Endpoint :   http://localhost:8000/api/web/carts
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          Authorization: Bearer token
+  
+  - Body   : 
+
+          product_id: 1
+          qty: 1
+          price: 100000
+          weight: 100
+        
+  
+  - Respone:
+
+
+                {
+                    "success": true,
+                    "message": "Success Add To Cart",
+                    "data": {
+                        "id": 1,
+                        "product_id": 1,
+                        "customer_id": 1,
+                        "qty": 2,
+                        "price": 200000,
+                        "weight": 200,
+                        "created_at": "2022-05-29T19:02:44.000000Z",
+                        "updated_at": "2022-06-06T03:07:00.000000Z"
+                    }
+                }
+                
+                
+                
+                
+                
+Total carts 
+Request:
+  - Method : GET
+  - Endpoint :    http://localhost:8000/api/web/carts/total_price
+  - Header : 
+  
+          Accept: application/json
+          Content-Type: application/json
+          Authorization: Bearer token
+  
+  - Body   : 
+
+          product_id: 1
+          qty: 1
+          price: 100000
+          weight: 100
+        
+  
+  - Respone: 
+ 
+            {
+                "success": true,
+                "message": "Total Cart Price",
+                "data": "200000"
+            }
