@@ -810,6 +810,188 @@ InVoice
 
 
 
+## WEBSITE
+Categories
+```
+- Method:Get
+- URL: http://localhost:8000/api/web/categories
+- Body:
+- Headers:
+    Accept: application/json
+    Content-Type: application/json
+    
+ - Response: {
+    "success": true,
+    "message": "List Data Categories",
+    "data": [
+        {
+            "id": 10,
+            "name": "batik contoh 5",
+            "slug": "batik-contoh-5",
+            "image": "http://localhost:8000/storage/categories/nbD6gkryhyhT9RTfoKHFnAGPEUJgcsVPjieYQb2A.jpg",
+            "created_at": "2022-05-23T07:13:00.000000Z",
+            "updated_at": "2022-05-23T07:13:00.000000Z"
+        },
+        {
+            "id": 9,
+            "name": "Batik Lamongan",
+            "slug": "batik-lamongan",
+            "image": "http://localhost:8000/storage/categories/hmvTMkgTSaykHTBSbeqW3s5CRwOnT12LSnQtHj3A.jpg",
+            "created_at": "2022-05-23T06:17:05.000000Z",
+            "updated_at": "2022-05-23T06:17:05.000000Z"
+        },
+        {
+            "id": 6,
+            "name": "batik Megamendung",
+            "slug": "batik-megamendung",
+            "image": "http://localhost:8000/storage/categories/0EiWmkdUml3e6jN7ghdUMdkk1w6aEPAzJoNwvhTI.jpg",
+            "created_at": "2022-05-22T21:18:10.000000Z",
+            "updated_at": "2022-05-22T21:18:10.000000Z"
+        }
+    ]
+}
+```
+
+## Users
+Admin Get Users
+```
+- Method:Get
+- URL:  http://localhost:8000/api/admin/users
+- Body:
+- Headers:
+    Accept: application/json
+    Content-Type: application/json
+    Authorization: Bearer "Token"
+
+Response: {
+    "success": true,
+    "message": "List Data Users",
+    "data": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 2,
+                "name": "Mulyadi Arman",
+                "email": "mulyadiarman18@gmail.com",
+                "email_verified_at": null,
+                "created_at": "2022-06-06T01:46:14.000000Z",
+                "updated_at": "2022-06-06T01:46:14.000000Z"
+            },
+            {
+                "id": 1,
+                "name": "Administrator",
+                "email": "admin@gmail.com",
+                "email_verified_at": null,
+                "created_at": null,
+                "updated_at": null
+            }
+        ],
+        "first_page_url": "http://localhost:8000/api/admin/users?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://localhost:8000/api/admin/users?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://localhost:8000/api/admin/users?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "http://localhost:8000/api/admin/users",
+        "per_page": 5,
+        "prev_page_url": null,
+        "to": 2,
+        "total": 2
+    }
+}
+```
+
+Admin Update Users
+```
+- Method: Post
+- URL:  http://localhost:8000/api/admin/users/2
+- Body:
+    email: mulyadiarman18@gmail.com
+    password: password
+    password_confirmation: password
+    _method: PATCH
+- Headers:
+    Content-Type: application/json
+    Accept: application/json
+    Authorization: Bearer "Token"
+ 
+ - Response: {
+    "success": true,
+    "message": "Data User Berhasil Diupdate!",
+    "data": {
+        "id": 2,
+        "name": "Mulyadi Arman123",
+        "email": "mulyadiarman18@gmail.com",
+        "email_verified_at": null,
+        "created_at": "2022-06-06T01:46:14.000000Z",
+        "updated_at": "2022-06-06T02:44:55.000000Z"
+    }
+}
+```
+
+Admin Post Users
+```
+- Method: Post
+- URL:  http://localhost:8000/api/admin/users
+- Body:
+    name: SatrioPutra
+    email: satriopewee@gmail.com
+    password: password
+    password_confirmation: password
+- Headers:
+    Accept: application/json
+    Content-Type: application/json
+    Authorization: Bearer "Token"
+    
+- Response:{
+    "success": true,
+    "message": "Data User Berhasil Disimpan!",
+    "data": {
+        "name": "SatrioPutra",
+        "email": "satriopewee@gmail.com",
+        "updated_at": "2022-06-06T02:58:36.000000Z",
+        "created_at": "2022-06-06T02:58:36.000000Z",
+        "id": 4
+    }
+}
+```
+
+Delete Users
+```
+- Method: Delete
+- URL:  http://localhost:8000/api/admin/users/2
+- Body: 
+    name: Mulyadi Arman123
+    email: mulyadiarman18@gmail.com
+    password: password
+    password_confirmation: password
+- Headers:
+    Content-Type: application/json
+    Accept: application/json
+    Authorization: Bearer "Token"
+- Response: {
+    "success": true,
+    "message": "Data User Berhasil Dihapus!",
+    "data": null
+}
+```
+
 
 
 
