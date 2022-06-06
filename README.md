@@ -571,6 +571,49 @@ Admin Get User
 "Code" : "200"
 ```
 
+## WEBSITE
+Categories
+```
+- Name: Catagories
+- Method:Get
+- URL: http://localhost:8000/api/web/categories
+- Body:
+- Headers:
+    Accept: application/json
+    Content-Type: application/json
+    
+ - Response: {
+    "success": true,
+    "message": "List Data Categories",
+    "data": [
+        {
+            "id": 10,
+            "name": "batik contoh 5",
+            "slug": "batik-contoh-5",
+            "image": "http://localhost:8000/storage/categories/nbD6gkryhyhT9RTfoKHFnAGPEUJgcsVPjieYQb2A.jpg",
+            "created_at": "2022-05-23T07:13:00.000000Z",
+            "updated_at": "2022-05-23T07:13:00.000000Z"
+        },
+        {
+            "id": 9,
+            "name": "Batik Lamongan",
+            "slug": "batik-lamongan",
+            "image": "http://localhost:8000/storage/categories/hmvTMkgTSaykHTBSbeqW3s5CRwOnT12LSnQtHj3A.jpg",
+            "created_at": "2022-05-23T06:17:05.000000Z",
+            "updated_at": "2022-05-23T06:17:05.000000Z"
+        },
+        {
+            "id": 6,
+            "name": "batik Megamendung",
+            "slug": "batik-megamendung",
+            "image": "http://localhost:8000/storage/categories/0EiWmkdUml3e6jN7ghdUMdkk1w6aEPAzJoNwvhTI.jpg",
+            "created_at": "2022-05-22T21:18:10.000000Z",
+            "updated_at": "2022-05-22T21:18:10.000000Z"
+        }
+    ]
+}
+```
+
 
 
 
