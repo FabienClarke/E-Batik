@@ -570,7 +570,7 @@ Admin Get User
 }
 "Code" : "200"
 ```
-##WEBSITE
+## WEBSITE
 Categories
 ```
 - Name: Catagories
