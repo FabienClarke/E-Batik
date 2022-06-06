@@ -92,7 +92,7 @@ Admin Login
 "Body" : 
 "Email" : "required"
 "Password" : "required"
-"Headers" :
+"Headers" 
 {"Accept" : "application/json"
 "Content-Type" : "application/json"}
 "Response" :
@@ -116,7 +116,7 @@ Admin Refresh
 "Method" : "GET"
 "URL" : "http://localhost:8000/api/admin/refresh"
 "Body" : 
-"Headers" : 
+"Headers"  
 {"Accept" : "application/json"
 "Content-Type" : "application/json"}
 "Response" :
@@ -141,7 +141,7 @@ Admin Invoices
 "Body" :
 {"Email" : "required"
 "Password" : "required"}
-"Headers" :
+"Headers" 
 {"Accept" : "application/json"
 "Content-Type" : "application/json"
 "Authorization" : "Bearer Token"}
@@ -332,7 +332,7 @@ Admin Customers
 "Body" 
 "Email" : "required"
 "Password" : "required"
-"Headers" :
+"Headers" 
 {"Accept" : "application/json"
 "Content-Type" : "application/json"
 "Authorization" : "Bearer Token"}
@@ -412,7 +412,7 @@ Admin Sliders
 "Method" : "GET"
 "URL" : "http://localhost:8000/api/admin/Sliders"
 "Body" :
-"Headers" : 
+"Headers"  
 {"Accept" : "application/json"
 "Content-Type" : "application/json"
 "Authorization" : "Bearer Token"}
@@ -483,7 +483,7 @@ Admin sliders add
 "Body" :
 "Image" : "Nama.JPG"
 "Link" : "url"
-"Headers" :
+"Headers" 
 {"Accept" : "application/json"
 "Content-Type" : "application/json"
 "Authorization" : "Bearer Token"}
@@ -508,7 +508,7 @@ Admin Sliders Delete
 "Body" :
 {"Image" : "Nama.JPG"
 "Link" : "url"}
-"Headers" :
+"Headers" 
 {"Accept" : "application/json"
 "Content-Type" : "application/json"
 "Authorization" : "Bearer Token"}
@@ -527,7 +527,7 @@ Admin Categories Post
 "Body" :
 {"Image" : "Nama.jpg"
 "Name" : "Batik Parang"}
-"Headers" :
+"Headers" 
 {"Accept" : "application/json"
 "Content-Type" : "application/json"
 "Authorization" : "Bearer Token"}
@@ -552,7 +552,7 @@ Admin Get User
 "Method" : "GET",
 "URL" : "http://localhost:8000/api/admin/user",
 "Body" :
-"Headers" :
+"Headers" 
 {"Accept" : "application/json"
 "Content-Type" : "application/json"
 "Authorization" : "Bearer Token"}
@@ -612,6 +612,201 @@ Categories
     ]
 }
 ```
+
+## CUSTOMER
+Customer Register
+```json
+"Method" : "POST"
+"URL" : "http://localhost:8000/api/customer/register"
+"Body" :
+"Name" : "Aldi"
+"Email" : "aldi@gmail.com"
+"Password" : "password"
+"Password_confirmation" : "password"
+"Headers"
+"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"
+"Response"
+{
+    "success": true,
+    "message": "Register Customer Berhasil",
+    "data": {
+        "name": "rainer",
+        "email": "rainer@gmail.com",
+        "updated_at": "2022-06-04T12:39:45.000000Z",
+        "created_at": "Sabtu, 04 Juni 2022",
+        "id": 6
+    }
+}
+ 
+"Code" : "200"
+```
+Customer Login
+```json
+"Method" : "POST"
+"URL" : "http://localhost:8000/api/customer/login"
+"Body"
+"Email" : "Email@gmail.com"
+"Password" : "passwod"
+"Headers"
+"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"
+"Response"
+{
+    "success": true,
+    "user": {
+        "id": 6,
+        "name": "rainer",
+        "email": "rainer@gmail.com",
+        "email_verified_at": null,
+        "created_at": "Sabtu, 04 Juni 2022",
+        "updated_at": "2022-06-04T12:39:45.000000Z"
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2N1c3RvbWVyL2xvZ2luIiwiaWF0IjoxNjU0MzQ2NTA2LCJleHAiOjE2NTQzNTAxMDYsIm5iZiI6MTY1NDM0NjUwNiwianRpIjoidENrcXg1ejVobUVHMjdVVyIsInN1YiI6IjYiLCJwcnYiOiIxZDBhMDIwYWNmNWM0YjZjNDk3OTg5ZGYxYWJmMGZiZDRlOGM4ZDYzIn0.74mw9SwF-bYMx8YV1wX6J4JZB2dQsEMl-m-kZCayMHU"
+}
+ 
+"Code" : "200"
+```
+GET Customer After Login
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/customer/user"
+"Body"
+"Headers"
+"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"
+"Response"
+{
+    "success": true,
+    "user": {
+        "id": 6,
+        "name": "rainer",
+        "email": "rainer@gmail.com",
+        "email_verified_at": null,
+        "created_at": "Sabtu, 04 Juni 2022",
+        "updated_at": "2022-06-04T12:39:45.000000Z"
+    }
+}
+ 
+"Code" : "200"
+```
+Refresh Customer
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/customer/refresh"
+"Body"
+"Headers"
+"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"
+"Response"
+{
+    "success": true,
+    "user": {
+        "id": 6,
+        "name": "rainer",
+        "email": "rainer@gmail.com",
+        "email_verified_at": null,
+        "created_at": "Sabtu, 04 Juni 2022",
+        "updated_at": "2022-06-04T12:39:45.000000Z"
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2N1c3RvbWVyL3JlZnJlc2giLCJpYXQiOjE2NTQzNDY1MDYsImV4cCI6MTY1NDM1MDIwMywibmJmIjoxNjU0MzQ2NjAzLCJqdGkiOiJsc0NtZGF5Mk1GeklNRVcwIiwic3ViIjoiNiIsInBydiI6IjFkMGEwMjBhY2Y1YzRiNmM0OTc5ODlkZjFhYmYwZmJkNGU4YzhkNjMifQ.6zLgcJri4GzpGbK0Ie6bg4QuhtVdZQQj8xeJoDVX7EU"
+}
+ 
+"Code" : "200"
+```
+Logout
+```json
+"Method" : "POST"
+"URL" : "http://localhost:8000/api/customer/logout"
+"Body"
+"Headers"
+"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"
+"Response"
+{
+    "success": true
+}
+ 
+"Code" : "200"
+```
+Dashboard
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/customer/dashboard"
+"Body" 
+"Headers"
+"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Response"
+{
+    "success": true,
+    "message": "Statistik Data",
+    "data": {
+        "count": {
+            "pending": 0,
+            "success": 0,
+            "expired": 0,
+            "failed": 0
+        }
+    }
+}
+ 
+"Code" : "200"
+```
+InVoice
+```json
+"Method" : "GET"
+"URL" : "http://localhost:8000/api/customer/invoices"
+"Body"
+"Headers"
+"Accept" : "application/json"
+"Content-Type" : "application/json"
+"Authorization" : "Bearer Token"
+"Response"
+{
+    "success": true,
+    "message": "List Data Invoices : rainer",
+    "data": {
+        "current_page": 1,
+        "data": [],
+        "first_page_url": "http://localhost:8000/api/customer/invoices?page=1",
+        "from": null,
+        "last_page": 1,
+        "last_page_url": "http://localhost:8000/api/customer/invoices?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://localhost:8000/api/customer/invoices?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "http://localhost:8000/api/customer/invoices",
+        "per_page": 5,
+        "prev_page_url": null,
+        "to": null,
+        "total": 0
+    }
+}
+"Code" : "200"
+```
+
+
 
 
 
